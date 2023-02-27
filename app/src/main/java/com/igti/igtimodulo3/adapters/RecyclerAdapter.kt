@@ -12,12 +12,7 @@ import com.igti.igtimodulo3.R
 import com.igti.igtimodulo3.models.Blog
 import com.igti.igtimodulo3.viewModels.MainViewModel
 
-class RecyclerAdapter (
-    val viewModel: MainViewModel,
-    val arrayList: ArrayList<Blog>,
-    val context: Context
-    ) : RecyclerView.Adapter<RecyclerAdapter.NotesViewHolder>() {
-
+class RecyclerAdapter (val viewModel: MainViewModel, val arrayList: ArrayList<Blog>, val context: Context) : RecyclerView.Adapter<RecyclerAdapter.NotesViewHolder>() {
     override fun onCreateViewHolder(
         parent: ViewGroup,
         viewType: Int
